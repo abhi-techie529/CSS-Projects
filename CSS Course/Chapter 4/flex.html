@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 400px;
+            display: flex;
+            /* flex-direction: row; */
+            background-color: gold;
+            /* flex-wrap: wrap; */
+            /* justify-content:center;       */
+            /* align-content:space-evenly;  */   /*used with large content */
+            align-items: center;
+        }
+        button{
+            height: 100px;
+            width: 100px;
+        }
+        #box1{
+           order: 3;                    /*order may also be negative*/
+          align-self: flex-end;
+         }
+
+         #box2{
+            order: 1;
+            /* flex-grow: 1; */            /* flex-grow property*/
+         }
+ 
+         #box3{
+            order: 2;
+            /* flex-shrink: 1; */     /* opposite of flex-grow*/
+         }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <button  id="box1">element 1 </button>
+        <button id="box2">element 2</button>
+        <button id="box3">element 3</button>
+        <!-- <button  id="box1">element 1 </button>     
+                                  /*used with flex-wrap*/      
+        <button id="box2">element 2</button>
+        <button id="box3">element 3</button>
+        <button  id="box1">element 1 </button>
+        <button id="box2">element 2</button>
+        <button id="box3">element 3</button>
+        <button  id="box1">element 1 </button>
+        <button id="box2">element 2</button>
+        <button id="box3">element 3</button>
+        <button  id="box1">element 1 </button>
+        <button id="box2">element 2</button>
+        <button id="box3">element 3</button>
+        <button  id="box1">element 1 </button>
+        <button id="box2">element 2</button>
+        <button id="box3">element 3</button>
+        <button  id="box1">element 1 </button>
+        <button id="box2">element 2</button>
+        <button id="box3">element 3</button> -->
+    </div>
+</body>
+</html>
