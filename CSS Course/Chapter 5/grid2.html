@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(231, 184, 184);
+            display: grid;
+            height: 500px;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,1fr);
+            gap: 10px;
+            grid-template-areas: 
+            "item1 item2 item3" 
+            "item1 item4 item5" 
+            "item1 item6 item7"
+            ".      .    item7" ;
+        }
+        .box{
+            background-color: green;
+        }
+        #item1{
+            grid-area: item1;
+            
+        }
+        #item2{
+            grid-area: item2;
+
+        }
+        #item3{
+            grid-area: item3;
+
+        }
+        #item4{
+            grid-area: item4;
+        }
+        #item5{
+            grid-area: item5;
+
+        }
+        #item6{
+            grid-area: item6;
+
+        }
+        #item7{
+            grid-area: item7;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="item1">1</div>
+        <div class="box" id="item2">2</div>
+        <div class="box" id="item3">3</div>
+        <div class="box" id="item4">4</div>
+        <div class="box" id="item5">5</div>
+        <div class="box" id="item6">6</div>
+        <div class="box" id="item7">7</div>
+       </div>
+</body>
+</html>

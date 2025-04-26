@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+/* 
+    @keyframes framestart {
+        0%{
+           translate: 5px 10px;
+        }
+        60%{
+            translate: 10px 20px;
+        }
+       
+        80%{
+            translate: -10px 40px;
+        }
+        100%{
+            translate: 0 -50px;
+        }
+    } */
+
+    @keyframes framestart {
+        from{
+           translate: 0px;
+        }
+        to{
+            translate: 100px;
+        }
+    }
+    .container{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        display: grid;
+        place-items: center;
+        font-size: 50px;
+        height: 200px;
+        width: 200px;
+        background-color: rgb(165, 220, 165);
+        /* animation-name: framestart;
+        animation-duration: 0.8s;
+        animation-timing-function: ease-in;
+        animation-delay: 2s;
+        animation-iteration-count: 4;
+        animation-direction: reverse; */
+        animation:framestart 0.8s ease-in 4 reverse ;
+    }
+       
+    .box:hover{
+      
+       
+        height: 300px;
+        width: 300px;
+        background-color: green;
+        
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">BOX</div>
+    </div>
+</body>
+</html>
