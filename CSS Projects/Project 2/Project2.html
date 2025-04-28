@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: grey;
+        }
+        .container{
+            max-width:1200px;
+           margin:27px auto;
+          
+        }
+        .box{
+            background-color: white;
+            max-width: 1000px;
+            border-radius: 10px;
+            margin:27px auto;
+        }
+        .content{
+            margin:59px 29px ;
+          
+        }
+        .title h1{
+            font-size: 82px;
+        }
+        .title span{
+            align-items: end;
+            color: #04175A;
+            font-size: 50px;
+        }
+        .form_container{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+        }
+        .name{
+            display: flex;
+            flex-direction: column;
+        }
+        label{
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        input,select,textarea{
+            padding: 10px 8px;
+            border: 2px solid rgb(221, 215, 215);
+            border-radius: 5px;
+        }
+         .button_container{
+            display: flex;
+           justify-content: flex-end;
+           align-items: end;
+           margin-top: 15px;
+           margin-bottom: 10px;
+           grid-column: span 2;
+         }
+        button{
+            background-color: red;
+            color: white;
+            border: 0;
+           border-radius: 5px;
+           height:46px;
+           width: 146px;
+           font-size: 18px;
+           /* transition: 0.5s ease-in; */
+        }
+        button:hover{
+            background-color:green;
+            color: black;
+            cursor: pointer;
+        }
+        .area{
+            display: grid;
+            grid-column: 1/span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="box">
+        <div class="content">
+            <div class="title"> 
+                <h1>Job Application <span>(Web)</span> </h1>
+               </div>
+             
+    <form>    
+            <div class="form_container">
+
+                <div class="name">
+                    <label for="fname">First Name </label>
+                
+                    <input type="text" id="fname">
+                   </div>
+                <div class="name">
+                    <label for="lname">Last Name</label> 
+               
+                    <input type="text" id="lname">
+                </div>   
+                   
+            
+                <div class="name">
+                     <label for="mail ">Email</label>
+                   
+                    <input type="email" id="mail" placeholder="example@gmail.com">
+                </div>   
+
+                <div class="name">
+                    <label for="job" >Job Role</label>
+                    
+                    <select name="job" id="job">
+                        <option value="option1">Option1</option>
+                        <option value="option2">Option2</option>
+                        <option value="option3">Option3</option>
+                        <option value="option4">Option4</option>
+                        <option value="option5">Option5</option>
+                        <option value="option6">Option6</option>
+                        <option value="option7">Option7</option>
+                    </select>
+                </div>
+  
+
+                <div class="area"> 
+                    <label for="text">Address</label>
+                    <br>
+                   <textarea name="text" id="text"  ></textarea>
+                </div>
+
+                  
+                    
+                <div class="name">
+                    <label for="city1">City</label>
+                    <br>
+                    <input type="text" id="city1">
+                </div>
+
+                <div class="name">
+                    <label for="code">Pincode</label>
+                    <br>
+                    <input type="number" id="code">
+                </div>
+                   
+               
+
+                <div class="name">
+                    <label for="dates">Start Date</label>
+                    <br>
+                    <input value="2025-04-27" type="date" id="dates">
+                </div>
+
+                <div class="name">
+                    <label for="cv">Upload You Cv</label>
+                       
+                        <input type="file" id="cv" placeholder="No File Chosen ">
+                </div>
+                
+                <div class="button_container">
+                    <button type="submit">Apply Now </button>
+                </div>
+        
+            </div>
+        
+            </form> 
+        </div>
+        </div>
+    </div>
+  
+</body>
+</html>
