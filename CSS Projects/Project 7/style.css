@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"roboto",sans-serif;
+    font-weight: 300;
+    line-height: 1.4; 
+}
+.logo img{
+    width: 150px;
+    height: auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+header{
+    position: sticky;
+    top: 0;
+    box-shadow: 5px 5px 5px rgba(1,1,1,0.05);
+    background-color: white;
+}
+aside {
+     position: sticky;
+     top: 0;
+     align-self: flex-start; 
+     background-color: white; 
+    }
+
+.center_nav{
+    display: flex;
+    /* justify-content: space-between; */
+    gap:15px ;
+}
+.search{
+    display: flex;
+  
+}
+.search input{
+    min-width: 580px;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    /* border-radius: 50px; */
+}
+.search button{
+    padding: 10px 20px;
+    border: none;
+    /* border-radius: 50px; */
+}
+.mic{
+    padding:15px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background-color: #EBEBEB;
+}
+.mic img{
+    width: 30px;
+}
+.side_nav{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 35px;
+    gap: 15px;
+}
+.tags{
+display: flex;
+gap: 19px;
+padding: 10px 20px;
+border-top: 1px solid #ccc;
+}
+.tags button{
+background-color: rgb(238,238,238);
+color: rgb(67,67,67);
+border: 1px solid rgb(19,19,19);
+border-radius: 20px;
+padding:5px 15px;
+transition: 0.2s ease-in-out;
+}
+.tags button:hover{
+background-color: hsl(0, 2%, 83%);
+transition: 0.2s ease-in-out;
+}
+.tags button:active{
+background-color: black;
+color: white;
+}
+.container{
+display: flex;
+}
+aside{
+padding:10px;
+display:flex;
+flex-direction: column;
+gap: 30px;
+/* justify-content: center; */
+align-items: center;
+}
+.bar{
+margin-top: 15px;
+}
+.side-icons{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.side-icons img{
+width: 30px;
+}
+.side-icons p{
+font-size: 10px;
+margin-top: -5px;
+}
+.main-container{
+width: 100%;
+}
+.main{
+height: 100%;
+background-color: rgb(238,238,238);
+}
+.card-container{
+display: grid;
+grid-template-columns: repeat(auto-fit ,minmax(320px,1fr));
+}
+.card{
+padding: 10px;
+display: flex;
+flex-direction: column;
+max-width: 320px;
+}
+.card-content{
+display:flex;
+padding: 5px;
+gap:14px;
+}
+.content{
+display: flex;
+flex-direction: column;
+gap: 5px;
+}
+.content h3{
+font-size: 20px;
+}
+.channel-name{
+font-size: 14px;
+font-weight: bold;
+}
+.content-status{
+display: flex;
+gap: 10px;
+font-size: 12px;
+}
