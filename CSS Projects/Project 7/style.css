@@ -127,6 +127,8 @@ background-color: rgb(238,238,238);
 .card-container{
 display: grid;
 grid-template-columns: repeat(auto-fit ,minmax(320px,1fr));
+gap: 20px;
+padding: 20px;
 }
 .card{
 padding: 10px;
@@ -155,4 +157,56 @@ font-weight: bold;
 display: flex;
 gap: 10px;
 font-size: 12px;
+}
+@media (max-width:1024px) {
+    .search input{
+        min-width: 300px;
+    }
+    .side_nav{
+        gap:10px;
+        margin-right: 10px;
+    }
+}
+@media (max-width:768px) {
+    aside{
+        display: none;
+    }
+    .search input{
+        min-width: 200px;
+    }
+    .tags{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main-container{
+        padding: 0 10px;
+    }
+}
+@media (max-width:480px) {
+    nav{
+        flex-direction: column;
+        align-items: start;
+    }
+    .search{
+        width: 100%; 
+    }
+    .search input{
+        width: 100%;
+    }
+    .center_nav{
+        gap: 10px;
+        width: 100%;
+    }
+    .side_nav{
+        gap: 5px;
+        margin-top: 5px;
+    }
+    .tags{
+        padding: 10px;
+        gap: 5px;
+    }
+    .tags button{
+        font-size: 12px;
+        padding: 4px 10px;
+    }
 }
