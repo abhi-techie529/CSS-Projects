@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        display: grid;
+        place-items: center;
+        font-size: 50px;
+        height: 200px;
+        width: 200px;
+        background-color: rgb(165, 220, 165);
+       
+        transition: rotate 0.3s ease-in-out;  /* here neccessary to use rotate property*/
+    }
+    .box:hover{
+        /* transform: rotate(50deg);
+        transform-origin: left; */
+
+        /* transform: rotateX(50deg);  */
+        
+         /* rotate:5 5 5 100turn;        <!--turn prperty is used for rotaiton--> */
+        
+        rotate: 50deg;
+        
+        height: 300px;
+        width: 300px;
+        background-color: green;
+        
+        transition: rotate 0.3s ease-in-out;    /* here neccessary to use rotate property*/
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">BOX</div>
+    </div>
+</body>
+</html>

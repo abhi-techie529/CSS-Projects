@@ -1,0 +1,202 @@
+  *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family:"Inter",sans-serif ;
+        font-weight: 300;
+        line-height: 1.4;
+        scroll-behavior: smooth;
+    }
+    header{
+       position: sticky;
+       top: 0;
+       background-color: white;
+       box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    }
+    nav{
+        padding:36px;
+        width: 1200px;
+        margin: 0 auto;
+       display: flex;
+       justify-content: space-between;
+       
+    }
+    ul{
+        list-style: none;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+    }
+    main{
+          width: 1200px;
+        margin: 0 auto;
+    }
+    .one{
+        display: flex;
+    }
+    .one-content{
+        display: flex;
+     flex-direction: column;
+     justify-content: center;
+    }
+    .one-content h1{
+        font-size: 80px;
+    }
+    .one-content h4{
+        font-size: 24px;
+        color: grey;
+    }
+    .one-img{
+        padding-top: 56px;
+        border-radius: 20px;
+    }
+    .two{
+        margin-top: 56px;
+        display: flex;
+       justify-content: space-between;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    }
+    .two-content{
+        padding: 41px 54px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .two-content p{
+        color: #878585;
+    }
+    .two1{
+        display:flex;
+        justify-content: space-between;
+    }
+    .two1 a{
+        text-decoration: none;
+        color: black;
+       font-style: bold;  
+    }
+    .three{
+        padding-top:43px ;
+       display: flex;
+       gap: 150px;
+      
+    }
+    .three1{
+        width: 297px;
+        height: 430px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .three-content{
+        display: flex;
+        flex-direction: column;
+        padding: 17px 14px;
+         gap:22px;
+    }
+    .three-content p{
+      color: #878585;
+    }
+    .four{
+        margin-top:43px;
+        background-color:rgb(235, 238, 242);
+        display: flex;
+    }
+    .four-content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 24px;
+        padding: 96px 63px;
+    }
+    .four-content h1{
+        font-size: 40px;
+    }
+    .four-content p{
+          color: #878585;
+    }
+    .next{
+        display: flex;
+        justify-content: end;
+       
+    }
+    .next button{
+        background-color: #6B46C1;
+        margin-top:31px;
+        width: 122px;
+        height: 37px;
+         border: none;
+        border-radius: 5px;
+    }
+    .next button:hover{
+        background-color: #8c7bb3;
+        cursor: pointer;
+    }
+    .next button:active{
+        background-color: #2e1174;
+        cursor: pointer;
+    }
+    .next button a{
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+    .divider{
+        margin-top: 43px;
+         border: 1px solid #878585;
+    }
+    footer{
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .copyright p{
+     padding: 24px 0;
+      color: #878585;
+    }
+    .icons{
+        padding:24px 0 ;
+        display: flex;
+        gap: 25px;
+        font-size:22px;
+    }
+    .zone{
+        width: 800px;
+        margin: 0 auto;
+    }
+   .five{
+    margin-top: 49px;
+     scroll-margin-top: 200px;
+   }
+   .six{
+    margin-top: 19px;
+   }
+   .six h1{
+    font-size: 45px;
+   }
+   .six2{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap:30px ;
+   }
+   .six2 p{
+color: #878585;
+   }
+   .content{
+    margin-top: 37px;
+    display: flex;
+    flex-direction: column;
+    gap:37px;
+   }
+   .content h1{
+    font-size: 30px;
+   }
