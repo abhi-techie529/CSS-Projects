@@ -1,1 +1,0 @@
-This is my project 8 "JavaScript Documentation"

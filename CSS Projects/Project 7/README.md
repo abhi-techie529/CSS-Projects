@@ -1,1 +1,0 @@
-This is 7th project in the list of CSS Projects. In this i make a "Youtube like homepage layout "
