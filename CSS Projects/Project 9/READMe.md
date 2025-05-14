@@ -1,1 +1,0 @@
-This is project 9 "A Blog Website"
