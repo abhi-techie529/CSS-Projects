@@ -231,7 +231,7 @@
     }
 
     .one-img img {
-         max-width: 200%; /* Increase from 100% to 120% */
+         max-width: 100%; /* Increase from 100% to 120% */
     height: auto;
     transform: scale(1.1); /* Slight zoom */
     transition: transform 0.3s ease-in-out;
@@ -265,17 +265,28 @@
     }
 }
 @media (max-width: 768px){
-    #contact .container h2{
+    /* #contact .container h2{
         font-size: 36px;
-        /* text-align: center; */
-    }
+        text-align: center;
+    } */
+      
+  .container {
+    padding: 20px;
+  }
+
+  /* #contact h2 {
+    text-align: center;
+    display: grid;
+    place-items: center;
+  } */
+      }
     .top-icons,.down-icons{
         font-size: 18px;
         flex-direction: column;
        gap: 20px;
        text-align: center;
     }
-}
+
 @media (max-width: 768px) {
     footer h2 {
         font-size: 18px;
